@@ -108,7 +108,16 @@ export const profile = {
   headline: "12 Years. 6 Studios. 50+ Mobile Products.",
   subheadline: "Senior Mobile Developer based in Hong Kong. CUHK Alumnus. Expert in the full mobile lifecycle from Unicorn Studio to OctopusX.",
   bio: "Trilingual engineer (English, Chinese, Japanese) specializing in high-scale Android and Cross-platform architectures. 12 years of delivering robust codebases for finance, media, and gaming.",
-  certifications: ["Google Associate Android Developer", "Google Certified App Developer"],
+  certifications: [
+    "Google Associate Android Developer",
+    "Google Certified App Developer",
+    "CodinGame Coding Speed Certification (Silver)",
+    "CodinGame Dart Certification (Top 1%)",
+    "CodinGame Dart Certification (With Honors)",
+    "CodinGame TypeScript Certification",
+    "CodinGame C++ Certification",
+    "CodinGame Python 3 Certification",
+  ],
   totalYears: 12,
   /** Total mobile apps / products shipped over career (portfolio marketing figure) */
   totalApps: 50,

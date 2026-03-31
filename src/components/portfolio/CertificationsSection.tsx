@@ -1,7 +1,22 @@
 import { motion } from "framer-motion";
 import { CheckCircle, ShieldCheck, BadgeCheck } from "lucide-react";
+import codingSpeedSilver2018 from "@/assets/certifications/coding-speed-silver-2018.png";
+import dartTopPercent2021 from "@/assets/certifications/dart-top-1-percent-2021.png";
+import dartWithHonors2022 from "@/assets/certifications/dart-with-honors-2022.png";
+import typescript2018 from "@/assets/certifications/typescript-2018.png";
+import cpp2018 from "@/assets/certifications/cpp-2018.png";
+import python32019 from "@/assets/certifications/python3-2019.png";
 
-const certifications = [
+type CertificationItem = {
+  name: string;
+  issuer: string;
+  icon: typeof ShieldCheck;
+  description: string;
+  highlights: string[];
+  image?: string;
+};
+
+const certifications: CertificationItem[] = [
   {
     name: "Google Associate Android Developer",
     issuer: "Google",
@@ -28,6 +43,60 @@ const certifications = [
       "Play Store publishing & app distribution",
     ],
   },
+  {
+    name: "CodinGame Coding Speed Certification (Silver)",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: codingSpeedSilver2018,
+    description:
+      "Certification validating strong algorithmic reflexes and coding speed through puzzle and game-based programming challenges.",
+    highlights: ["Silver level coding speed", "Automatic coding reflexes", "Algorithm implementation efficiency", "Issued Apr 3, 2018"],
+  },
+  {
+    name: "CodinGame Dart Certification (Top 1%)",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: dartTopPercent2021,
+    description:
+      "Dart problem-solving certification with a performance ranking better than 99% of professionals on the platform.",
+    highlights: ["Dart problem solving", "Better than 99% ranking", "Competitive timed evaluation", "Issued Feb 3, 2021"],
+  },
+  {
+    name: "CodinGame Dart Certification (With Honors)",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: dartWithHonors2022,
+    description:
+      "Advanced Dart certification awarded with honors, demonstrating high-quality problem-solving capability.",
+    highlights: ["With honors distinction", "Dart problem solving", "Advanced challenge completion", "Issued Dec 28, 2022"],
+  },
+  {
+    name: "CodinGame TypeScript Certification",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: typescript2018,
+    description:
+      "TypeScript problem-solving certification proving language knowledge and practical coding performance.",
+    highlights: ["TypeScript problem solving", "Practical coding proficiency", "Challenge-based validation", "Issued May 27, 2018"],
+  },
+  {
+    name: "CodinGame C++ Certification",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: cpp2018,
+    description:
+      "C++ certification that attests strong fundamentals and applied algorithmic problem-solving ability.",
+    highlights: ["C++ problem solving", "Core language proficiency", "Algorithmic fundamentals", "Issued Aug 3, 2018"],
+  },
+  {
+    name: "CodinGame Python 3 Certification",
+    issuer: "CodinGame by CoderPad",
+    icon: BadgeCheck,
+    image: python32019,
+    description:
+      "Python 3 problem-solving certification demonstrating practical programming capability in competitive coding environments.",
+    highlights: ["Python 3 problem solving", "Applied coding proficiency", "Puzzle-driven assessment", "Issued Jan 17, 2019"],
+  },
 ];
 
 const CertificationsSection = () => {
@@ -49,7 +118,7 @@ const CertificationsSection = () => {
           Certifications
         </motion.h2>
         <p className="text-sm text-muted-foreground mt-1">
-          Industry-recognized credentials from Google.
+          Credentials from Google and CodinGame that validate language expertise and real-world coding performance.
         </p>
       </div>
 
@@ -70,6 +139,12 @@ const CertificationsSection = () => {
               className="bg-card rounded-xl p-6 border border-border hover:border-primary/30 transition-all duration-300 group relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {cert.image && (
+                <div className="mb-4 overflow-hidden rounded-lg border border-border/60 bg-muted/20">
+                  <img src={cert.image} alt={cert.name} className="w-full h-auto object-cover" loading="lazy" />
+                </div>
+              )}
 
               <div className="flex items-start gap-3 mb-4">
                 <motion.div
