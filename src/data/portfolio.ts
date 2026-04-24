@@ -106,8 +106,8 @@ export const profile = {
   university: "The Chinese University of Hong Kong (CUHK)",
   languages: ["English", "中文", "日本語"],
   headline: "12 Years. 6 Studios. 50+ Mobile Products.",
-  subheadline: "Senior Mobile Developer based in Hong Kong. CUHK Alumnus. Expert in Android, Flutter, FlutterFlow, and full mobile lifecycle delivery from Unicorn Studio to OctopusX.",
-  bio: "Trilingual engineer (English, Chinese, Japanese) specializing in high-scale Android, Flutter, FlutterFlow, and cross-platform architectures. 12 years of delivering robust codebases for finance, media, and gaming.",
+  subheadline: "Senior Mobile Developer based in Hong Kong. CUHK Alumnus. Expert in Android, Flutter, React Native, and full mobile lifecycle delivery from Unicorn Studio to OctopusX.",
+  bio: "Trilingual engineer (English, Chinese, Japanese) specializing in high-scale Android, Flutter, React Native, and cross-platform architectures. 12 years of delivering robust codebases for finance, media, and gaming.",
   certifications: [
     "Google Associate Android Developer",
     "Google Certified App Developer",
