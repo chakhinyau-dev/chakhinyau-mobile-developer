@@ -9,7 +9,7 @@ const skillCategories = [
       { name: "Android (Java)", years: "12 years" },
       { name: "Android (Kotlin)", years: "10 years" },
       { name: "Jetpack Compose", years: "5 years" },
-      { name: "iOS (Swift)", years: "5 years" },
+      { name: "iOS (Swift)", years: "6 years" },
       { name: "Flutter / Dart", years: "7 years" },
       { name: "FlutterFlow", years: "5 years" },
       { name: "React Native", years: "7 years" },
