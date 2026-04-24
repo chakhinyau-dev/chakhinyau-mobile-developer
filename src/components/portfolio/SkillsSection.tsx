@@ -11,7 +11,7 @@ const skillCategories = [
       { name: "Jetpack Compose", years: "5 years" },
       { name: "iOS (Swift)", years: "5 years" },
       { name: "Flutter / Dart", years: "7 years" },
-      { name: "FlutterFlow", years: "3 years" },
+      { name: "FlutterFlow", years: "5 years" },
       { name: "React Native", years: "7 years" },
     ],
   },
